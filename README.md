@@ -17,7 +17,7 @@ strengthen and improve the app.
  
 ## Requirements
 
-1. iPhone, iPad, iPod Touch iOS version 5.1 or later
+1. iPhone, iPad, iPod Touch iOS version 7.1 or later
 2. RSS feeds for content to be aggregated and displayed by the app
      
 ## Usage
@@ -28,7 +28,7 @@ will be able to configure the app to receive push
 notifications. Placeholder assets may be replaced to customize the
 app's look and feel.
 
-Building the app requires the iOS 5.1 SDK or higher.
+Building the app requires the iOS 7.1 SDK or higher.
 
 This app makes use of several libraries in source, binary, and
 submodule form. All libraries live in the `libs/` directory.
@@ -65,11 +65,7 @@ static library used by the app.
 
 The following libraries must be downloaded and installed manually:
 
-* [libUAirship][] - Urban Airship library for iOS
 * [Google Analytics SDK for iOS][ga]
-
-To install Urban Airship, download the SDK and place the entire
-`Airship` directory inside of `libs/`.
 
 To install Google Analytics, download the SDK and place the entire
 `Google Analytics SDK` directory inside of `libs/`.
@@ -167,7 +163,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-[libUAirship]: http://urbanairship.com/resources/
 [ga]: https://developers.google.com/analytics/devguides/collection/ios/resources
 [CustomBadge]: http://www.spaulus.com/2011/04/custombadge-2-0-retina-ready-scalable-light-reflex/
 [Underscore.js]: http://underscorejs.org/
