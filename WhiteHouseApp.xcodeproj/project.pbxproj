@@ -92,7 +92,6 @@
 		5265E72915B865CE00173B1C /* shrinkify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5265E72815B865CE00173B1C /* shrinkify@2x.png */; };
 		5265E8AB15B8B13700173B1C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5265E8AA15B8B13700173B1C /* CoreLocation.framework */; };
 		5265E8AD15B8B13D00173B1C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5265E8AC15B8B13D00173B1C /* CoreTelephony.framework */; };
-		5265E8AF15B8B15200173B1C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5265E8AE15B8B15200173B1C /* StoreKit.framework */; };
 		5266E07215C9D308009E37C7 /* live-feed-zero-state.png in Resources */ = {isa = PBXBuildFile; fileRef = 5266E06E15C9D308009E37C7 /* live-feed-zero-state.png */; };
 		5266E07315C9D308009E37C7 /* live-feed-zero-state@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5266E07015C9D308009E37C7 /* live-feed-zero-state@2x.png */; };
 		5267925A157E4432002DE2C3 /* NICommonMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267922E157E4432002DE2C3 /* NICommonMetrics.m */; };
@@ -159,10 +158,6 @@
 		52FCB72415B99FD100B76924 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FCB72315B99FD100B76924 /* play.png */; };
 		E50E04DA194B29FD0034E5B3 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E50E04CD194B29FD0034E5B3 /* FBDialog.bundle */; };
 		E50E04DB194B29FD0034E5B3 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E04D3194B29FD0034E5B3 /* libfacebook_ios_sdk.a */; };
-		E597B96F194B2E3E00D5ED2E /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E597B96B194B2E3E00D5ED2E /* Gotham-Bold.otf */; };
-		E597B970194B2E3E00D5ED2E /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E597B96C194B2E3E00D5ED2E /* Gotham-BoldItalic.otf */; };
-		E597B971194B2E3E00D5ED2E /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E597B96D194B2E3E00D5ED2E /* Gotham-Book.otf */; };
-		E597B972194B2E3E00D5ED2E /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E597B96E194B2E3E00D5ED2E /* Gotham-BookItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -306,7 +301,6 @@
 		5265E72815B865CE00173B1C /* shrinkify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shrinkify@2x.png"; sourceTree = "<group>"; };
 		5265E8AA15B8B13700173B1C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5265E8AC15B8B13D00173B1C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		5265E8AE15B8B15200173B1C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5266E06F15C9D308009E37C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/live-feed-zero-state.png"; sourceTree = "<group>"; };
 		5266E07115C9D308009E37C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/live-feed-zero-state@2x.png"; sourceTree = "<group>"; };
 		5267922C157E4432002DE2C3 /* NIBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIBlocks.h; path = libs/nimbus/src/core/src/NIBlocks.h; sourceTree = SOURCE_ROOT; };
@@ -435,10 +429,6 @@
 		E50E04D7194B29FD0034E5B3 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		E50E04D8194B29FD0034E5B3 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		E50E04D9194B29FD0034E5B3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		E597B96B194B2E3E00D5ED2E /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
-		E597B96C194B2E3E00D5ED2E /* Gotham-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BoldItalic.otf"; sourceTree = "<group>"; };
-		E597B96D194B2E3E00D5ED2E /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
-		E597B96E194B2E3E00D5ED2E /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,7 +440,6 @@
 				526D95BE16134DFE00D4796D /* Accounts.framework in Frameworks */,
 				E50E04DB194B29FD0034E5B3 /* libfacebook_ios_sdk.a in Frameworks */,
 				526D95BC16134DFB00D4796D /* AdSupport.framework in Frameworks */,
-				5265E8AF15B8B15200173B1C /* StoreKit.framework in Frameworks */,
 				5265E8AD15B8B13D00173B1C /* CoreTelephony.framework in Frameworks */,
 				5265E8AB15B8B13700173B1C /* CoreLocation.framework in Frameworks */,
 				525A69AC15B4B5520076F34B /* Twitter.framework in Frameworks */,
@@ -656,7 +645,6 @@
 				526D95BF16134E0300D4796D /* Social.framework */,
 				526D95BD16134DFE00D4796D /* Accounts.framework */,
 				526D95BB16134DFB00D4796D /* AdSupport.framework */,
-				5265E8AE15B8B15200173B1C /* StoreKit.framework */,
 				5265E8AC15B8B13D00173B1C /* CoreTelephony.framework */,
 				5265E8AA15B8B13700173B1C /* CoreLocation.framework */,
 				525A69AB15B4B5520076F34B /* Twitter.framework */,
@@ -999,10 +987,6 @@
 		E597B96A194B2E3300D5ED2E /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E597B96B194B2E3E00D5ED2E /* Gotham-Bold.otf */,
-				E597B96C194B2E3E00D5ED2E /* Gotham-BoldItalic.otf */,
-				E597B96D194B2E3E00D5ED2E /* Gotham-Book.otf */,
-				E597B96E194B2E3E00D5ED2E /* Gotham-BookItalic.otf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -1038,6 +1022,11 @@
 				TargetAttributes = {
 					5235CC13155C5FF10095163C = {
 						DevelopmentTeam = YFQV2VRDY2;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1078,7 +1067,6 @@
 				524136651585A80000B69354 /* shrinkify.png in Resources */,
 				5241366915866A9C00B69354 /* white-disclosure-indicator.png in Resources */,
 				522C5B641587C1BB004AD1A5 /* photo-placeholder.png in Resources */,
-				E597B972194B2E3E00D5ED2E /* Gotham-BookItalic.otf in Resources */,
 				523A97B21587E70D00E6B9DA /* NimbusPhotos.bundle in Resources */,
 				5241A1441591729800362510 /* search.png in Resources */,
 				E50E04DA194B29FD0034E5B3 /* FBDialog.bundle in Resources */,
@@ -1088,7 +1076,6 @@
 				5230F0B9159A50E20022DA48 /* nav-branding.png in Resources */,
 				52D95106159CEDA800393450 /* live-bar-content.png in Resources */,
 				52D95107159CEDA800393450 /* live-bar-handle.png in Resources */,
-				E597B96F194B2E3E00D5ED2E /* Gotham-Bold.otf in Resources */,
 				525A69DD15B616690076F34B /* bar-background.png in Resources */,
 				525A69DE15B616690076F34B /* bar-background@2x.png in Resources */,
 				525A69E115B6FABF0076F34B /* bar-background-landscape.png in Resources */,
@@ -1102,7 +1089,6 @@
 				52FCB72415B99FD100B76924 /* play.png in Resources */,
 				5276752E15BEFEAE00BD9E16 /* photo-loading-image.png in Resources */,
 				5276752F15BEFEAE00BD9E16 /* photo-loading-image@2x.png in Resources */,
-				E597B970194B2E3E00D5ED2E /* Gotham-BoldItalic.otf in Resources */,
 				52AB9B1115C33A5100A8624A /* BarButtonBackground.png in Resources */,
 				52AB9B1215C33A5100A8624A /* BarButtonBackground@2x.png in Resources */,
 				5232EC9815C6239F004CA89C /* Default-Landscape.png in Resources */,
@@ -1118,7 +1104,6 @@
 				523C27E815D576FD002E093A /* youtube.html in Resources */,
 				5208F9C5160CF03500F2C4C2 /* Default-568h@2x.png in Resources */,
 				526D95CC1614FE5000D4796D /* vignette.png in Resources */,
-				E597B971194B2E3E00D5ED2E /* Gotham-Book.otf in Resources */,
 				526D95CE1614FE9400D4796D /* noise800.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1309,7 +1294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1339,7 +1324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1368,6 +1353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1376,7 +1362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhiteHouseApp/WhiteHouseApp-Prefix.pch";
@@ -1391,6 +1377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

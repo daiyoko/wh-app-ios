@@ -16,16 +16,16 @@
 	<integer>12</integer>
 	<key>PrimaryBrandColor</key>
 	<string>#003366</string>
-	<key>HeadingFontName</key>
-	<string>Gotham-Book</string>
-	<key>DetailFontName</key>
-	<string>Gotham-Book</string>
 	<key>ToolbarBranding.FontName</key>
-	<string>Gotham-Book</string>
+	<string>HoeflerText-Regular</string>
 	<key>LiveBarTitleFontName</key>
-	<string>Gotham-Book</string>
+	<string>Arial-BoldMT</string>
 	<key>LiveBarHandleFontName</key>
-	<string>Gotham-Book</string>
+	<string>Arial-BoldMT</string>
+	<key>HeadingFontName</key>
+	<string>Georgia</string>
+	<key>DetailFontName</key>
+	<string>Arial</string>
 	<key>TextExtractionXPath</key>
 	<string>//p | //div[not(starts-with(@class, &apos;field&apos;))]</string>
 	<key>ArticleBaseURL</key>

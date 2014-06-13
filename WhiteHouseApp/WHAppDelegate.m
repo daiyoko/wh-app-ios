@@ -84,7 +84,8 @@
 - (WHMenuItem *)createMenuItem:(UIViewController *)viewController
 {
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    navController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[WHStyle headingFontWithSize:22.0], UITextAttributeFont, nil];
+    navController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[WHStyle headingFontWithSize:22.0]};
+    
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:self action:@selector(revealToggle:)];
     viewController.navigationItem.leftBarButtonItem = menuButton;
     return [[WHMenuItem alloc] initWithTitle:viewController.title icon:nil viewController:navController];
