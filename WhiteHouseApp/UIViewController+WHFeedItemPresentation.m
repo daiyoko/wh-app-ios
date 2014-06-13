@@ -47,9 +47,7 @@
 
 
 - (void)displayFeedItem:(WHFeedItem *)item
-{
-    [[GANTracker sharedTracker] trackPageview:[NSString stringWithFormat:@"%@/%@", [self trackingPathComponent], [item trackingPathCompontent]] withError:nil];
-    
+{    
     if (item.enclosureURL) {
         NSString *host = item.enclosureURL.host;
         if ([host rangeOfString:@"youtube"].location != NSNotFound || [host rangeOfString:@"youtu.be"].location != NSNotFound) {

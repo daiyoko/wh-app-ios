@@ -41,8 +41,6 @@
 #import "WHFavoritesViewController.h"
 #import "WHVideoViewController.h"
 #import "WHRemoteFile.h"
-#import "UATagUtils.h"
-#import "UAPush.h"
 
 
 @interface WHAppDelegate ()
@@ -205,16 +203,6 @@
     
     [self configureAppearance];
     
-    
-    // configure Google Analytics
-    NSString *accountID = AppConfig(@"GANAccountID");
-    GANTracker *tracker = [GANTracker sharedTracker];
-    
-    // do not send full IP addresses
-    tracker.anonymizeIp = YES;
-    [tracker startTrackerWithAccountID:accountID dispatchPeriod:30 delegate:nil];
-    [tracker trackPageview:@"/LAUNCH" withError:nil];
-    
     self.menu = [self loadMenu];
     UIViewController *defaultViewController = [[self.menu.menuItems objectAtIndex:0] viewController];
     self.reveal = [[WHRevealViewController alloc] initWithMenuViewController:self.menu contentViewController:defaultViewController];
@@ -246,8 +234,6 @@
 
 - (void)initAirship:(UIApplication *)application
 {
-    [UAirship takeOff:[NSDictionary dictionary]];
-    
     // Register for notifications
     [application registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                                      UIRemoteNotificationTypeSound |
@@ -256,7 +242,6 @@
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [UAirship land];
 }
 
 
@@ -266,16 +251,6 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Updates the device token and registers the token with UA
     DebugLog(@"Got registration data: %@", deviceToken);
-    
-    // use a basic set of Urban Airship tags
-    NSArray *baseTags = [UATagUtils createTags:(UATagTypeTimeZoneAbbreviation |
-                                                UATagTypeLanguage |
-                                                UATagTypeCountry |
-                                                UATagTypeDeviceType)];
-    // specify the new version of the app, so we can send appropriate notifications
-    NSArray *tags = [baseTags arrayByAddingObject:@"app_v2"];
-    [UAPush shared].tags = tags;
-    [[UAPush shared] registerDeviceToken:deviceToken];
 }
 
 

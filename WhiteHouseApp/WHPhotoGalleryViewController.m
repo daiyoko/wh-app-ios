@@ -203,8 +203,6 @@ static CGSize idealThumbSize;
 
 - (void)displayFeedItem:(WHFeedItem *)feedItem
 {
-    [[GANTracker sharedTracker] trackPageview:[NSString stringWithFormat:@"%@/%@", [self trackingPathComponent], [feedItem trackingPathCompontent]] withError:nil];
-
     // handle the image selection here
     WHPhotoViewController *photoView = [[WHPhotoViewController alloc] initWithNibName:nil bundle:nil];
     photoView.feedItems = self.posts;
