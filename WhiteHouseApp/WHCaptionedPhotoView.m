@@ -90,9 +90,10 @@ static UIEdgeInsets kWellPadding;
     
     CGFloat availableWidth = self.bounds.size.width - kWellPadding.left - kWellPadding.right;
     
-    CGSize labelSize =  [self.captionLabel.text sizeWithFont:self.captionLabel.font
-                                           constrainedToSize:CGSizeMake(availableWidth, CGFLOAT_MAX)
-                                               lineBreakMode:self.captionLabel.lineBreakMode];
+    CGRect labelRect = [self.captionLabel.text boundingRectWithSize:CGSizeMake(availableWidth, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.captionLabel.font} context:nil];
+    
+    CGSize labelSize = labelRect.size;
+    
     CGFloat wellHeight = labelSize.height + kWellPadding.top + kWellPadding.bottom;
     self.captionWell.frame = CGRectMake(0, self.bounds.size.height - wellHeight,
                                         self.bounds.size.width, wellHeight);

@@ -81,16 +81,22 @@ static NSString *WHVideoFavoriteInstructionsDefaultKey = @"VideoSharingInstructi
     [mailer setSubject:title];
     NSString *body = [NSString stringWithFormat:@"<a href=\"%@\">%@</a>", [self.feedItem.link absoluteString], title];
     [mailer setMessageBody:body isHTML:YES];
-    [self.viewController presentModalViewController:mailer animated:YES];
+    [self.viewController presentViewController:mailer animated:YES completion:nil];
 }
 
 
 - (void)tweetArticle
 {
-    TWTweetComposeViewController *tweet = [[TWTweetComposeViewController alloc] init];
-    [tweet setInitialText:self.feedItem.title];
-    [tweet addURL:self.feedItem.link];
-    [self.viewController presentModalViewController:tweet animated:YES];
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweet = [[SLComposeViewController alloc] init];
+        [tweet setInitialText:self.feedItem.title];
+        [tweet addURL:self.feedItem.link];
+        [self.viewController presentViewController:tweet animated:YES completion:nil];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"Please enable tweeter first!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 
@@ -186,7 +192,7 @@ static NSString *WHVideoFavoriteInstructionsDefaultKey = @"VideoSharingInstructi
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
-    [self.viewController dismissModalViewControllerAnimated:YES];
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 

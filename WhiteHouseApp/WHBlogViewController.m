@@ -158,7 +158,11 @@ NSString* RelativeDateString(NSDate *date)
 - (CGSize)sizeForTitleText:(NSString *)text
 {
     CGFloat titleWidth = self.tableView.bounds.size.width - (CELL_PADDING + CELL_PADDING_RIGHT);
-    return [text sizeWithFont:[WHStyle headingFontWithSize:TITLE_FONT_SIZE] constrainedToSize:CGSizeMake(titleWidth, 1000) lineBreakMode:NSLineBreakByWordWrapping];
+    
+    CGRect textRect = [text boundingRectWithSize:CGSizeMake(titleWidth, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[WHStyle headingFontWithSize:TITLE_FONT_SIZE]} context:nil];
+    
+    return textRect.size;
+    //return [text sizeWithFont:[WHStyle headingFontWithSize:TITLE_FONT_SIZE] constrainedToSize:CGSizeMake(titleWidth, 1000) lineBreakMode:NSLineBreakByWordWrapping];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
